@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phonetics — Akros</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="index.html" class="topnav-brand">Akros</a>
+  <div class="topnav-links">
+<a href="index.html">Home</a>
+<a href="phonetics.html" class="current">Phonetics</a>
+<a href="dictionary.html">Dictionary</a>
+<a href="grammar.html">Grammar</a>
+<a href="syntax.html">Syntax</a>
+<a href="conversations.html">Conversations</a>
+<a href="lessons.html">Lessons</a>
+<a href="folklore.html">Folklore</a>
+<a href="sessions.html">Sessions</a>
+<a href="history.html">History</a>
+  </div>
+  <button class="nav-hamburger" onclick="toggleMobileMenu()" aria-label="Menu">&#9776;</button>
+</nav>
+
+<div class="nav-mobile-menu" id="mobileMenu">
+<a href="index.html">Home</a>
+<a href="phonetics.html" class="current">Phonetics</a>
+<a href="dictionary.html">Dictionary</a>
+<a href="grammar.html">Grammar</a>
+<a href="syntax.html">Syntax</a>
+<a href="conversations.html">Conversations</a>
+<a href="lessons.html">Lessons</a>
+<a href="folklore.html">Folklore</a>
+<a href="sessions.html">Sessions</a>
+<a href="history.html">History</a>
+</div>
+
+<main class="main">
+
+<div class="page-hero">
+  <h1>Phonetics</h1>
+  <p>9 consonants, 5 pure vowels, no diphthongs, no consonant clusters. Stress always falls on the first syllable. Designed to be learnable by any speaker in one sitting.</p>
+</div>
+<h1 id="akros-final-phonetic-reference">Akros — Final Phonetic Reference</h1>
+<p><em>Cycle R25 — Capstone Edition</em></p>
+
+<hr class="divider">
+
+<h2 id="design-philosophy">Design Philosophy</h2>
+
+<p>Akros phonology follows <strong>consistent sonority principles</strong>: words feel grounded, clear, and speakable. No cluster that would require English-speaker strain. The sound system is lean — fewer phonemes, more expressive combinations. Every word in the language can be produced with exactly the same mouth positions; you learn the sounds once and own the language.</p>
+
+<hr class="divider">
+
+<h2 id="the-phoneme-inventory">The Phoneme Inventory</h2>
+
+<h3 id="consonant-chart">Consonant Chart</h3>
+
+<div class="table-wrap"><table><thead>
+<tr><th>Symbol</th><th>IPA</th><th>Articulation</th><th>As in (approx.)</th><th>Notes</th></tr>
+</thead><tbody>
+<tr><td>m</td><td>/m/</td><td>nasal, bilabial</td><td>English "man"</td><td>Closes the lips; humming</td></tr>
+<tr><td>n</td><td>/n/</td><td>nasal, alveolar</td><td>English "no"</td><td>Tongue on ridge behind teeth</td></tr>
+<tr><td>l</td><td>/l/</td><td>lateral, alveolar</td><td>English "look"</td><td>Tongue touches ridge, air flows beside</td></tr>
+<tr><td>r</td><td>/r/</td><td>flap, alveolar</td><td>Spanish "pero"</td><td>A single quick tap — never the English growl</td></tr>
+<tr><td>s</td><td>/s/</td><td>fricative, alveolar</td><td>English "see"</td><td>Hissing, never /z/ at word end</td></tr>
+<tr><td>t</td><td>/t/</td><td>stop, alveolar, unaspirated</td><td>English "stop" (the t after s)</td><td>No puff of air — never "top"</td></tr>
+<tr><td>k</td><td>/k/</td><td>stop, velar, unaspirated</td><td>English "skip" (the k after s)</td><td>No puff of air — never "kite"</td></tr>
+<tr><td>v</td><td>/v/</td><td>fricative, labiodental</td><td>English "vine"</td><td>Never /w/</td></tr>
+<tr><td>z</td><td>/z/</td><td>fricative, alveolar</td><td>English "zone"</td><td>Word-internal only; never word-final</td></tr>
+</tbody></table></div>
+
+<p><strong>Nine consonants total.</strong></p>
+
+<hr class="divider">
+
+<h3 id="vowel-chart">Vowel Chart</h3>
+
+<div class="table-wrap"><table><thead>
+<tr><th>Symbol</th><th>IPA</th><th>Position</th><th>As in (approx.)</th><th>Notes</th></tr>
+</thead><tbody>
+<tr><td>a</td><td>/a/</td><td>open, low, central</td><td>Spanish "casa"</td><td>Mouth open wide; never "ay"</td></tr>
+<tr><td>e</td><td>/e/</td><td>mid-front, unrounded</td><td>French "été"</td><td>Tongue slightly forward; no glide to /i/</td></tr>
+<tr><td>i</td><td>/i/</td><td>high-front, unrounded</td><td>English "machine"</td><td>Sustained "ee" sound</td></tr>
+<tr><td>o</td><td>/o/</td><td>mid-back, rounded</td><td>Spanish "no"</td><td>Rounded lips; no glide to /w/</td></tr>
+<tr><td>u</td><td>/u/</td><td>high-back, rounded</td><td>English "food"</td><td>Sustained "oo" sound</td></tr>
+</tbody></table></div>
+
+<p><strong>Five pure vowels. No diphthongs — except for the frozen pronoun mai /mai/ (I/me), which is the sole lexicalized vowel sequence in Akros.</strong></p>
+
+<hr class="divider">
+
+<h2 id="phonotactic-rules">Phonotactic Rules</h2>
+
+<h3 id="syllable-structure-c-v-c">Syllable Structure: <strong>(C)V(C)</strong></h3>
+
+<p>Every syllable has:</p>
+<ul>
+<li><strong>One vowel nucleus</strong> — required</li>
+<li><strong>One onset consonant</strong> — optional</li>
+<li><strong>One coda consonant</strong> — optional; limited to <strong>m n l r s k</strong> only</li>
+</ul>
+
+<p><em>The coda set excludes v and z. No syllable may end in these.</em></p>
+
+<h3 id="word-shape">Word Shape</h3>
+
+<div class="table-wrap"><table><thead>
+<tr><th>Type</th><th>Syllables</th><th>Examples</th></tr>
+</thead><tbody>
+<tr><td>Particles / anchors</td><td>1</td><td>ma, si, tu, lo, ruk, tuk, kol, sir</td></tr>
+<tr><td>Core vocabulary</td><td>2</td><td>na.lem, si.rak, ko.ru, tu.mal</td></tr>
+<tr><td>Derived / compound</td><td>3</td><td>ru.ko.ma, sar.ve.nim, si.mu.rak</td></tr>
+<tr><td>Extended compound</td><td>3 max (non-compound)</td><td>All 3-syllable core words are morphologically motivated</td></tr>
+</tbody></table></div>
+
+<p><strong>Hard rule: no non-compound word exceeds 3 syllables. Compounds (sacred names, derived forms) may reach 4 syllables only when etymologically transparent.</strong></p>
+
+<h3 id="stress">Stress</h3>
+
+<ul>
+<li><strong>Default: stress falls on the first syllable always.</strong></li>
+<li>Words of 3+ syllables: light secondary stress on the third syllable.</li>
+<li><strong>Stress never shifts with suffixation.</strong> The root keeps its stress; the suffix is unstressed.</li>
+</ul>
+
+<hr class="divider">
+
+<h2 id="forbidden-sequences">Forbidden Sequences</h2>
+
+<div class="table-wrap"><table><thead>
+<tr><th>Rule</th><th>Forbidden</th><th>Reason</th></tr>
+</thead><tbody>
+<tr><td>No adjacent identical consonants</td><td><em>kk, </em>mm, *nn</td><td>Unnatural in Akros; no such sequences exist</td></tr>
+<tr><td>No word-initial /r/</td><td>*ruk-initial word (ruk itself is the anchor — used as-is)</td><td>r never begins a new coined word</td></tr>
+<tr><td>No word-final /z/</td><td><em>-az, </em>-iz, *-oz</td><td>z only appears word-internally</td></tr>
+<tr><td>No vowel-adjacent vowels</td><td><em>aa, </em>oi, *eu</td><td>Syllable structure prohibits; insert consonant or restructure</td></tr>
+<tr><td>No consonant clusters</td><td><em>str-, </em>-nd-, *-lk-</td><td>(C)V(C) structure prevents all clusters</td></tr>
+</tbody></table></div>
+
+<hr class="divider">
+
+<h2 id="the-five-anchor-sounds">The Five Anchor Sounds</h2>
+
+<p><em>The anchors are the generative core of Akros. They are simultaneously the shortest words, the ancient names for the five fundamental forces, and the building blocks from which most vocabulary derives. In old storytelling traditions, these forces were personified as divine figures; in everyday Akros, they are simply the roots of meaning.</em></p>
+
+<h3 id="ma-ma-existence-presence-body-being"><strong>ma</strong> /ma/ — Existence · Presence · Body · Being</h3>
+
+<p>The most grounded sound in Akros. Open mouth, voiced nasal onset, open low vowel. You cannot close the lips without making /m/. The body acknowledges its own presence.</p>
+
+<ul>
+<li>Generates: <strong>mavel</strong> (ancient name for the force of existence; in old stories, the divine presence), <strong>mavos</strong> (sacred/revered), <strong>mavum</strong> (temple), <strong>matoram</strong> (soul), <strong>mavok</strong> (promise), <strong>malok</strong> (ancient name for memory's force; in old stories, keeper of the deep past), <strong>malum</strong> (fate)</li>
+<li>Tendency: all m- initial words carry a sense of physicality, presence, the material world</li>
+<li>To speak <strong>ma</strong> is to say: <em>I am here.</em></li>
+</ul>
+
+<hr class="divider">
+
+<h3 id="si-si-motion-process-flow-change"><strong>si</strong> /si/ — Motion · Process · Flow · Change</h3>
+
+<p>High front vowel (/i/) after a sibilant onset — the word physically moves forward in the mouth. The tongue rises toward the palate as the air passes.</p>
+
+<ul>
+<li>Generates: <strong>sivel</strong> (ancient name for the force of motion; in old stories, the walker of time), <strong>situr</strong> (ancient name for the force of thresholds; in old stories, keeper of crossings), <strong>sirak</strong> (river), <strong>silom</strong> (dawn), <strong>sikol</strong> (run), <strong>sinak</strong> (try), <strong>solvim</strong> (journey)</li>
+<li>Tendency: s- initial words carry motion, action, process</li>
+<li>To speak <strong>si</strong> is to say: <em>Something is happening.</em></li>
+</ul>
+
+<hr class="divider">
+
+<h3 id="tu-tu-boundary-edge-law-truth"><strong>tu</strong> /tu/ — Boundary · Edge · Law · Truth</h3>
+
+<p>Unaspirated stop onset followed by a high-back rounded vowel — the mouth makes a sharp interruption then rounds into closure. A sound that ends things.</p>
+
+<ul>
+<li>Generates: <strong>tuvos</strong> (ancient name for the force of law; in old stories, the keeper of boundaries), <strong>situr</strong> (threshold force), <strong>tumal</strong> (earth), <strong>tolen</strong> (door), <strong>tunak</strong> (border), <strong>tusom</strong> (end), <strong>tuvnal</strong> (justice), <strong>tuvak</strong> (truth)</li>
+<li>Tendency: t- initial words carry edges, boundaries, definitions, structure</li>
+<li>To speak <strong>tu</strong> is to say: <em>Here is where it stops.</em></li>
+</ul>
+
+<hr class="divider">
+
+<h3 id="lo-lo-relation-love-inside-community"><strong>lo</strong> /lo/ — Relation · Love · Inside · Community</h3>
+
+<p>Lateral onset into a full mid-back vowel — the tongue touches the ridge (defining a point) and then opens into the round, interior vowel. Sound of being held inside.</p>
+
+<ul>
+<li>Generates: <strong>lovel</strong> (ancient name for the force of connection; in old stories, the keeper of bonds), <strong>lorak</strong> (give), <strong>losak</strong> (lose), <strong>lomak</strong> (table), <strong>lorin</strong> (tongue), <strong>lovik</strong> (leaf), <strong>loturak</strong> (forgiveness)</li>
+<li>Tendency: l- initial words carry relation, intimacy, connection, interiority</li>
+<li>To speak <strong>lo</strong> is to say: <em>We are in relation.</em></li>
+</ul>
+
+<hr class="divider">
+
+<h3 id="ruk-ruk-force-storm-creation-intensity"><strong>ruk</strong> /ruk/ — Force · Storm · Creation · Intensity</h3>
+
+<p>The only monosyllabic word with a coda stop. The flap /r/ followed by a short back vowel and a final velar stop — the syllable has maximum energy, starting in motion and ending in a hard stop. The sound of force meeting form.</p>
+
+<ul>
+<li>Generates: <strong>rukoma</strong> (ancient name for the force of creation; in old stories, the storm-maker), <strong>rukvos</strong> (divine power), <strong>rukim</strong> (spirit), <strong>rukon</strong> (power), <strong>ruvel</strong> (wolf), <strong>noruk</strong> (catch), <strong>simurak</strong> (agree)</li>
+<li>Tendency: ruk- words carry intensity, power, the generative and destructive creative act</li>
+<li>To speak <strong>ruk</strong> is to say: <em>Force is here.</em></li>
+</ul>
+
+<hr class="divider">
+
+<h2 id="sound-meaning-correspondences-phonaesthesia">Sound-Meaning Correspondences (Phonaesthesia)</h2>
+
+<p><em>These are tendencies, not rules. They emerged organically as the lexicon grew. A speaker can feel them without being taught them.</em></p>
+
+<div class="table-wrap"><table><thead>
+<tr><th>Sound pattern</th><th>Tendency</th><th>Attested examples</th></tr>
+</thead><tbody>
+<tr><td>Initial <strong>m-</strong></td><td>presence, being, body</td><td>maren (body), motal (mother), minu (hand), motan (person)</td></tr>
+<tr><td>Initial <strong>s-</strong></td><td>motion, flow, process</td><td>solen (walk), sirak (river), seva (breathe), sikol (run)</td></tr>
+<tr><td>Initial <strong>t-</strong></td><td>boundary, edge, definition</td><td>tumal (earth), tolen (door), tilas (wall), tusom (end)</td></tr>
+<tr><td>Initial <strong>k-</strong></td><td>completion, sharp focus</td><td>koru (eye), kasem (fire), kinal (bone), kulsal (succeed)</td></tr>
+<tr><td>Initial <strong>v-</strong></td><td>openness, space, sky</td><td>vela (sky), voran (new), votam (cloud), velim (peace)</td></tr>
+<tr><td>Initial <strong>n-</strong></td><td>need, listening, longing</td><td>noran (want), noval (hear), nelom (peace), nolim (dream)</td></tr>
+<tr><td>Initial <strong>nu-</strong></td><td>vulnerability, concealment</td><td>nuvik (die), nulan (neck), nukan (hide)</td></tr>
+<tr><td>Final <strong>-an</strong></td><td>place or location tendency</td><td>toran (path), voran (new), velan (sweet)</td></tr>
+<tr><td>Final <strong>-em</strong></td><td>small or intimate</td><td>kasem (fire/hearth), sorem (child), kelam (shame)</td></tr>
+<tr><td>Final <strong>-ul</strong></td><td>abstract concept (suffix)</td><td>vesan-ul = the love concept, vasom (wisdom)</td></tr>
+<tr><td>Vowel <strong>a</strong></td><td>groundedness, earth</td><td>maren (body), kasem (fire), lasan (forest)</td></tr>
+<tr><td>Vowel <strong>i</strong></td><td>precision, sharpness</td><td>kinal (bone), tilas (wall), minu (hand), tirik (fast)</td></tr>
+<tr><td>Vowel <strong>o</strong></td><td>fullness, depth</td><td>korun (loneliness), solen (walk), torem (change)</td></tr>
+</tbody></table></div>
+
+<hr class="divider">
+
+<h2 id="phonaesthetic-pairs-documented">Phonaesthetic Pairs (Documented)</h2>
+
+<p>These pairs share a phonological root and a semantic logic. They are not homophones — they are deliberate echoes.</p>
+
+<div class="table-wrap"><table><thead>
+<tr><th>Pair</th><th>Words</th><th>Shared transformation logic</th></tr>
+</thead><tbody>
+<tr><td><strong>tor-</strong></td><td><strong>toram</strong> /ˈto.ram/ (forget) · <strong>torem</strong> /ˈto.rem/ (change)</td><td>Both transform a prior state: to forget is to change what the mind holds. Vowel a/e distinguishes forgetting from transforming.</td></tr>
+<tr><td><strong>ti- sharp</strong></td><td><strong>tivir</strong> /ˈti.vir/ (anger) · <strong>tivok</strong> /ˈti.vok/ (hope)</td><td>Both sharp, forward-facing emotional states. Anger pushes outward; hope leans forward.</td></tr>
+<tr><td><strong>nu- open</strong></td><td><strong>nuvik</strong> /ˈnu.vik/ (die) · <strong>nulan</strong> /ˈnu.lan/ (neck) · <strong>nukan</strong> /ˈnu.kan/ (hide)</td><td>Vulnerability cluster: the neck is exposed; death is ultimate exposure; hiding is the response to exposure.</td></tr>
+<tr><td><strong>vel- near</strong></td><td><strong>vela</strong> /ˈve.la/ (sky) · <strong>velim</strong> /ˈve.lim/ (inner peace) · <strong>velo</strong> /ˈve.lo/ (hello)</td><td>Openness, proximity, welcome. Peace and greeting share the sky's openness.</td></tr>
+<tr><td><strong>mel- communal</strong></td><td><strong>melas</strong> /ˈme.las/ (we) · <strong>melom</strong> /ˈme.lom/ (grief)</td><td>Grief is communal — the heart knows it is part of a we when it breaks.</td></tr>
+</tbody></table></div>
+
+<hr class="divider">
+
+<h2 id="canonical-minimal-pairs-phonemic-contrasts">Canonical Minimal Pairs (Phonemic Contrasts)</h2>
+
+<p>These pairs confirm that each phoneme is distinctly functional:</p>
+
+<div class="table-wrap"><table><thead>
+<tr><th>Pair</th><th>IPA contrast</th><th>Confirms</th></tr>
+</thead><tbody>
+<tr><td><strong>maren</strong> (body) vs <strong>naren</strong> (shadow-echo form)</td><td>/m/ vs /n/</td><td>nasal place contrast</td></tr>
+<tr><td><strong>solen</strong> (walk) vs <strong>tolen</strong> (door)</td><td>/s/ vs /t/</td><td>fricative vs stop</td></tr>
+<tr><td><strong>vela</strong> (sky) vs <strong>nelas</strong> (night)</td><td>/v/ vs /n/, /a/ vs /as/</td><td>onset + coda contrast</td></tr>
+<tr><td><strong>koru</strong> (eye) vs <strong>toran</strong> (path)</td><td>/k/ vs /t/, /u/ vs /an/</td><td>full word contrast</td></tr>
+<tr><td><strong>nel</strong> (near) vs <strong>vol</strong> (far)</td><td>/n/ vs /v/, /e/ vs /o/</td><td>spatial opposites, full phonemic contrast</td></tr>
+<tr><td><strong>lo</strong> (in) vs <strong>tos</strong> (on) vs <strong>nos</strong> (under)</td><td>/l/ vs /t/ vs /n/</td><td>full spatial set distinct</td></tr>
+<tr><td><strong>toram</strong> (forget) vs <strong>torem</strong> (change)</td><td>/a/ vs /e/</td><td>vowel-only contrast, phonaesthetic pair</td></tr>
+<tr><td><strong>sitam</strong> (inside-adverb) vs <strong>sitak</strong> (impossible form)</td><td>confirms sitam is unique</td><td>sitan retired to remove near-homophone risk</td></tr>
+<tr><td><strong>solam</strong> (joy) vs <strong>nomak</strong> (wood)</td><td>fully distinct after R25 fix</td><td>previous near-homophone resolved</td></tr>
+</tbody></table></div>
+
+<hr class="divider">
+
+<h2 id="pronunciation-guide-for-learners">Pronunciation Guide for Learners</h2>
+
+<h3 id="vowels-the-most-important-thing">Vowels — The Most Important Thing</h3>
+
+<p>Every vowel is <strong>pure</strong>. English vowels glide. Akros vowels do not.</p>
+
+<div class="table-wrap"><table><thead>
+<tr><th>Vowel</th><th>Wrong (English glide)</th><th>Right (Akros pure)</th><th>Trick</th></tr>
+</thead><tbody>
+<tr><td><strong>a</strong></td><td>"hay" /heɪ/</td><td>/a/ as in "father"</td><td>Drop your jaw. Say "ah."</td></tr>
+<tr><td><strong>e</strong></td><td>"hey" /heɪ/</td><td>/e/ as in "bed" but held</td><td>Stop the glide before it reaches /i/</td></tr>
+<tr><td><strong>i</strong></td><td>"hit" /ɪ/</td><td>/i/ as in "machine"</td><td>Sustain it — "eeee"</td></tr>
+<tr><td><strong>o</strong></td><td>"go" /goʊ/</td><td>/o/ as in "yoga"</td><td>Round your lips and hold. No /w/ at end.</td></tr>
+<tr><td><strong>u</strong></td><td>"put" /ʊ/</td><td>/u/ as in "food"</td><td>Deep "ooo" — further back in the mouth</td></tr>
+</tbody></table></div>
+
+<h3 id="consonants-the-three-to-watch">Consonants — The Three to Watch</h3>
+
+<p><strong>r</strong>: Tap your tongue once, quickly, behind the upper teeth. Like the Spanish /r/ in "pero." Not the English growl. Not a full trill. One tap.</p>
+
+<p><strong>t, k</strong>: Unaspirated. Say "stop" — feel that the /t/ has no puff of air after it. That is Akros /t/. Say "skip" — feel that the /k/ has no puff. That is Akros /k/. The aspirated versions ("top," "kite") do not exist in Akros.</p>
+
+<p><strong>v</strong>: Always the English /v/ (labiodental fricative). Never the English /w/ (bilabial approximant).</p>
+
+<h3 id="stress-in-doubt-hit-the-first-syllable">Stress — In Doubt, Hit the First Syllable</h3>
+
+<pre><code>NA-lem      (not na-LEM)
+VE-la       (not ve-LA)
+TI-ron      (not ti-RON)
+MA-vel      (not ma-VEL)
+RU-ko-ma    (not ru-KO-ma)
+SI-mu-rak   (not si-mu-RAK)</code></pre>
+
+<hr class="divider">
+
+<h2 id="the-sound-map-of-akros">The Sound Map of Akros</h2>
+
+<p><em>A way to see the whole phonology at once.</em></p>
+
+<pre><code>STOPS:      t  k                (unaspirated — no puff)
+FRICATIVES: s  v  z             (z word-internal only)
+NASALS:     m  n                (humming consonants)
+LATERAL:    l                   (tongue on ridge)
+FLAP:       r                   (one tap, never a growl)
+
+VOWELS:     a    e    i    o    u
+            low  mid  high mid  high
+            front          back
+
+ONSET RULE:   any consonant — or none
+CODA RULE:    m  n  l  r  s  k — or none
+CLUSTER RULE: none permitted, ever
+STRESS RULE:  first syllable, always</code></pre>
+
+
+<h2 id="notes-for-etta-grammar-integration">Notes for Etta (Grammar Integration)</h2>
+
+<p><strong>On the tor- pair</strong>: The phonaesthetic relationship between toram (forget) and torem (change) is now formally documented. Both use the tor- root; both involve transformation of a prior state. A grammar section on "productive phonaesthetic roots" would complete this picture. The pair can serve as a model for how phonaesthesia and morphology interact in Akros.</p>
+
+<p><strong>On ven (or) vs. ven (experiential aspect)</strong>: The context rule is now documented in vocabulary.md. Ven as connector joins clauses; ven as aspect particle immediately precedes a verb. No further disambiguation mechanism is needed — word order does the work.</p>
+
+<p><strong>On -tul and -vos as honorific suffixes (E42)</strong>: Confirmed that no R-cycle vocabulary word uses -tul as a stem. The suffix is clean for its grammatical function. Words ending in -vos include: tuvos (god's name, not a derived form), rukvos (divine power — compound, transparent), mavos (sacred — compound, transparent). All are etymologically clear; -vos as an honorific suffix on human names/roles remains unambiguous.</p>
+
+<p><strong>On register and vocabulary</strong>: Several R22–R24 words carry implicit register weight:</p>
+<ul>
+<li><strong>tuvnal</strong> (justice), <strong>vasnam</strong> (freedom) — formal/philosophical register</li>
+<li><strong>manik</strong> (oath), <strong>voskan</strong> (law), <strong>talrom</strong> (council) — formal/civic register (new in R25)</li>
+<li><strong>kaslem</strong> (fire-dance), <strong>loksel</strong> (prayer), <strong>sitvel</strong> (ceremony) — archaic/ritual register (these forms survive in traditional ceremony and storytelling; not actively practiced as a living religion)</li>
+<li><strong>mavok</strong> (promise), <strong>sorel</strong> (song), <strong>mirak</strong> (music) — can move across registers</li>
+</ul>
+
+
+
+<footer class="site-footer">
+  Akros &middot; Babel Engine &middot; Rose &amp; Etta
+</footer>
+</main>
+
+<script>
+function toggleMobileMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+// Close mobile menu on link click
+document.querySelectorAll('.nav-mobile-menu a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.remove('open');
+  });
+});
+
+</script>
+</body>
+</html>
